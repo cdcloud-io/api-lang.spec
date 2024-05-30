@@ -8,6 +8,9 @@ router "user_management" {
     method       = "GET"
     path         = "/{id}"
     description  = "Retrieve user details by ID"
+    logging      = true
+    auth         = true
+    telemetry    = true
 
     response {
       status_code = 200
@@ -35,6 +38,9 @@ router "user_management" {
     method       = "POST"
     path         = ""
     description  = "Create a new user"
+    logging      = true
+    auth         = true
+    telemetry    = false
 
     request {
       body = <<-EOF
