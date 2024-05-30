@@ -1,5 +1,10 @@
 # api-lang.spec
 
+## urls
+api-lang.org
+api-lang.dev
+api-lang.app
+
 ```
 router "user_management" {
   base_path = "/users"
